@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Utama</title>
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script>
+        function logout() {
+          var log = document.getElementById("log").value;
+          if (log == log) {
+            swal({
+              title: "Apakah Yakin?",
+              text: "Anda Akan Kembali Ke Halaman Login",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            })
+              .then((willDelete) => {
+                if (willDelete) {
+                  window.location.href = "login.html";
+                } else {
+                  swal("Anda Tetap Berada Di Halaman Ini");
+                }
+              });
+          }
+        }
+
+        function logout() {
+          var log = document.getElementById("log").value;
+          if (log == log) {
+            swal({
+              title: "Apakah Anda Yakin?",
+              text: "Anda Akan Kembali Ke Halaman Login",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            })
+              .then((willDelete) => {
+                if (willDelete) {
+                  window.location.href = 'login.html';
+                } else {
+                  swal("Anda Tetap Berada Di Halaman Ini");
+                }
+              });
+          }
+        }
+      </script>
+      <div class="logo">
+        <img src="Logo_Universitas_Tadulako_Palu.png" alt="image" width="55px" height="55px">
+        <h3>Febriyadi <br> F55121082</h3>
+      </div>
+      <div class="brand-name">
+        <ul>
+          <li><a href="index.html" class="tombol">home</a></li>
+          <li><a href="data-tabel.html" class="tombol">Data Tabel</a></li>
+          <li><a href="formulir.html" class="tombol">Formulir</a></li>
+          <div class="button">
+            <input type="submit" value="Logout" id="log" onclick="logout()">
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main">
+      <div class="top-bar">
+        <div class="konten">
+          <h2>SELAMAT DATANG HALAMAN PENDAFTARAN MAHASISWA BARU</h2>
+          <p>
+            Satu kenyataan objectif, bahwa sebagaian besar dari masyarakat pelaksanaan pengembangan ilmu pengetahuan.
+            Tuntunan tersebut tidak bisa dihindarikan dalam rangka mencerdaskan kehidupan bangsa.
+          </p><br>
+          <h2>VISI</h2>
+          <p>
+            Menjadi pusat layanan penerimaan mahasiswa baru, kemahasiswaan dan alumni yang unggul dan inovatif,
+            menguasai IPTEKS berlandaskan nilai-nilai Islam untuk kesejahteraan masyarakat.
+          </p>
+          <br>
+          <h2>MISI</h2>
+          <p>
+            1. Menyelenggarakan layanan penerimaan mahasiswa baru yang berkualitas, profesional dan responsif.<br>
+            2. Meningkatkan kuantitas dan kualitas mahasiswa baru dengan sistim seleksi yang optimal.<br>
+            3. Meningkatkan sebaran sekolah dan daerah/negara asal mahasiswa baru baik nasional maupun
+            internasional.<br>
+            4. Menerapkan sistem pelayanan kemahasiswaan berbasis system informasi yang terintegrasi.<br>
+            5. Menyelenggarakan layanan kemahasiswaan yang berkualitas dan profesional dalam rangka meningkatkan
+            kapasitas dan prestasi mahasiswa.<br>
+            6. Menyelenggarakan program pelayanan dan pembinaan kewirausahaan mahasiswa untuk meningkatkan kompetensi
+            berwirausaha<br>
+            7. Menyelenggarakan layanan informasi lowongan kerja dan pelatihan serta pengembangan dalam mempersiapkan
+            mahasiswa dan alumni guna mampu bersaing di dalam dunia kerja.<br>
+            8. Meningkatkan keunggulan pengembangan bidang kemahasiswaan yang Islami, kompetitif, dan berkarakter<br>
+          </p>
+          <br>
+          <h2>TUJUAN</h2>
+          <p>Menjadi direktorat Penerimaan mahasiswa baru, kemahasiswaan dan alumni yang unggul, inovatif dalam
+            pengembangan potensi mahasiswa dibidang akademik, organisasi, minat, bakat, dan kewirausahaan serta ikut
+            berperan dalam menghasilkan lulusan yang kompeten, kompetitif, dan berakhlak karimah.
+            Menjadi unit kemahasiswaan yang memberi jaminan kesejahteraan dalam bentuk beasiswa, insentif, dan pelayanan
+            kesehatan.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
